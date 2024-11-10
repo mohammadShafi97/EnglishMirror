@@ -1,15 +1,24 @@
-import React from "react";
+import React, { useRef } from "react";
 import ContactUsSection from "../contact/ContactUsSection";
+import { useInView } from "framer-motion";
 
 export default function AboutUsSection() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: false });
   return (
     <div
+      id="about"
       className="lg:px-[120px] px-5 py-10 relative bg-no-repeat bg-cover"
       style={{ backgroundImage: `url("/about-bg.jpg")` }}
     >
       <div className="absolute inset-0 bg-black opacity-60 "></div>
-      <div className="relative flex justify-between items-center">
-        <div className="text-white my-10 flex flex-col gap-5 font-medium max-w-[650px] text-justify">
+      <div className="relative flex justify-between items-center ">
+        <div
+          ref={ref}
+          className={`text-white my-10 flex flex-col gap-5 font-medium max-w-[650px] text-justify ${
+            isInView && "animate-slideInLeft"
+          }`}
+        >
           <h4 className="text-4xl font-bold">About Us</h4>
           <p>
             Welcome to Englishmirror – your partner in mastering the English
@@ -37,7 +46,13 @@ export default function AboutUsSection() {
             now, and we’re here to guide you every step of the way.
           </p>
         </div>
-        <img src="/logo.jpg" className="w-[350px] rounded-lg"></img>
+        <img
+          src="/rishy.jpg"
+          ref={ref}
+          className={`w-[350px] rounded-lg ${
+            isInView && "animate-slideInRight"
+          }`}
+        ></img>
       </div>
       <div className="relative flex">
         <ContactUsSection />
