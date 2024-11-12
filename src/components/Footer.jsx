@@ -9,28 +9,30 @@ import { CiLocationOn, CiMail, CiPhone } from "react-icons/ci";
 export default function Footer() {
   return (
     <div className="lg:px-[120px] py-10 px-5 bg-gradient-to-br from-white to-gray-600 flex flex-col gap-5">
-      <div className="flex justify-between items-center">
+      <div className="flex md:flex-row flex-col justify-between gap-7 md:items-center">
         <div className="flex flex-col gap-7">
           <img className="w-[170px] rounded-lg" src="/logo.jpg"></img>
           <div className="text-xl flex gap-5">
             <FooterLinks
               icon={<FaInstagram />}
-              href={"#"}
+              href={
+                "https://www.instagram.com/englishmirror_kerala?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              }
               text={"text-[#e1306c]"}
             />
             <FooterLinks
               icon={<FaFacebookSquare />}
-              href={"#"}
+              href={"https://www.facebook.com/profile.php?id=61568276982938"}
               text={"text-[#3C5A99]"}
             />
             <FooterLinks
               icon={<FaLinkedin />}
-              href={"#"}
+              href={"https://www.linkedin.com/in/englishmirror/"}
               text={"text-[#156BC1]"}
             />
             <FooterLinks
               icon={<FaYoutube />}
-              href={"#"}
+              href={"https://www.youtube.com/@no1onlineenglishacademy"}
               text={"text-[#EC1515]"}
             />
           </div>
@@ -47,13 +49,13 @@ export default function Footer() {
             <span>
               <CiMail />
             </span>
-            example123@gmail.com
+            englishmirrorofficial@gmail.com.com
           </p>
           <p className="flex gap-2 text-lg items-center">
             <span>
               <CiPhone />
             </span>
-            +91 9874561230
+            +91 8111827681
           </p>
         </div>
       </div>

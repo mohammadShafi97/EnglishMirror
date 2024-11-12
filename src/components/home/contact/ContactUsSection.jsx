@@ -14,7 +14,7 @@ export default function ContactUsSection() {
       className="text-black w-full rounded-lg bg-cover bg-right bg-no-repeat"
       style={{ backgroundImage: `url("/contact1.jpg")` }}
     >
-      <div className="flex flex-col gap-5 w-2/3 p-5 ms-auto">
+      <div className="flex flex-col gap-5 lg:w-2/3 w-full p-5 ms-auto">
         <h4 className="text-3xl font-bold text-white my-7">
           Have any Questions? Contact US
         </h4>

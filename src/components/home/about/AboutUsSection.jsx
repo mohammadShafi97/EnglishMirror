@@ -12,10 +12,10 @@ export default function AboutUsSection() {
       style={{ backgroundImage: `url("/about-bg.jpg")` }}
     >
       <div className="absolute inset-0 bg-black opacity-60 "></div>
-      <div className="relative flex justify-between items-center ">
+      <div className="relative flex lg:flex-row flex-col justify-between items-center ">
         <div
           ref={ref}
-          className={`text-white my-10 flex flex-col gap-5 font-medium max-w-[650px] text-justify ${
+          className={`text-white my-10 flex flex-col gap-5 font-medium xl:max-w-[650px] lg:max-w-[450px] text-justify ${
             isInView && "animate-slideInLeft"
           }`}
         >
@@ -49,7 +49,7 @@ export default function AboutUsSection() {
         <img
           src="/rishy.jpg"
           ref={ref}
-          className={`w-[350px] rounded-lg ${
+          className={`w-[350px] lg:mb-0 mb-10 rounded-lg ${
             isInView && "animate-slideInRight"
           }`}
         ></img>
