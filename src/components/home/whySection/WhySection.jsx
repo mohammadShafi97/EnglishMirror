@@ -7,7 +7,7 @@ export default function WhySection() {
   const Ref = useRef(null);
   const isInView = useInView(Ref, { once: false });
   return (
-    <div
+    <section
       id="why"
       className="lg:px-[120px] py-10 px-5 pb-15 bg-gradient-to-br from-white to-gray-300"
     >
@@ -33,6 +33,6 @@ export default function WhySection() {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 }

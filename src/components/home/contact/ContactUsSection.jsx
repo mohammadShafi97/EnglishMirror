@@ -9,7 +9,7 @@ export default function ContactUsSection() {
   const [location, setLocation] = useState("");
   const [message, setMessage] = useState("");
   return (
-    <div
+    <section
       id="contact"
       className="text-black w-full rounded-lg bg-cover bg-right bg-no-repeat"
       style={{ backgroundImage: `url("/contact1.jpg")` }}
@@ -62,6 +62,6 @@ export default function ContactUsSection() {
           Contact Now
         </motion.button>
       </div>
-    </div>
+    </section>
   );
 }

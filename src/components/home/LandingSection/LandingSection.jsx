@@ -43,7 +43,7 @@ export default function LandingSection() {
     animateSequence();
   }, [isInView, h1Controls, spanControls]);
   return (
-    <div
+    <section
       id="home"
       className="lg:px-[120px] fade-background relative py-10 px-5 h-screen bg-no-repeat bg-cover flex flex-col justify-center items-center"
       style={{ backgroundImage: images[activeIndex] }}
@@ -79,6 +79,6 @@ export default function LandingSection() {
         </motion.button>
       </div>
       {showPopup && <LanguageSelector setShowPopup={setShowPopup} />}
-    </div>
+    </section>
   );
 }

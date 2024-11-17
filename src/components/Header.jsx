@@ -8,14 +8,14 @@ import SmallHeader from "./SmallHeader";
 export default function Header({ setShowPopup }) {
   const [showSmallHeader, setShowSmallHeader] = useState(false);
   return (
-    <div className="h-20 lg:px-[120px] py-5 px-5 flex justify-between items-center shadow-md ">
+    <header className="h-20 lg:px-[120px] py-5 px-5 flex justify-between items-center shadow-md ">
       <img src="/logo.jpg" className="w-[150px] rounded-md"></img>
-      <div className="lg:flex gap-5 text-lg font-medium hidden">
+      <nav className="lg:flex gap-5 text-lg font-medium hidden">
         <HeaderLinks href={"#home"} content={"Home"} />
         <HeaderLinks href={"#why"} content={"Why Us"} />
         <HeaderLinks href={"#about"} content={"About Us"} />
         <HeaderLinks href={"#contact"} content={"Contact Us"} />
-      </div>
+      </nav>
       <motion.button
         initial={{ scale: 1 }}
         whileHover={{ scale: 1.1, backgroundColor: "#10b981" }} // Change color on hover
@@ -37,6 +37,6 @@ export default function Header({ setShowPopup }) {
           <SmallHeader setShowSmallHeader={setShowSmallHeader} />
         </div>
       )}
-    </div>
+    </header>
   );
 }

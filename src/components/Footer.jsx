@@ -8,7 +8,7 @@ import { CiLocationOn, CiMail, CiPhone } from "react-icons/ci";
 
 export default function Footer() {
   return (
-    <div className="lg:px-[120px] py-10 px-5 bg-gradient-to-br from-white to-gray-600 flex flex-col gap-5">
+    <footer className="lg:px-[120px] py-10 px-5 bg-gradient-to-br from-white to-gray-600 flex flex-col gap-5">
       <div className="flex md:flex-row flex-col justify-between gap-7 md:items-center">
         <div className="flex flex-col gap-7">
           <img className="w-[170px] rounded-lg" src="/logo.jpg"></img>
@@ -49,7 +49,7 @@ export default function Footer() {
             <span>
               <CiMail />
             </span>
-            englishmirrorofficial@gmail.com.com
+            englishmirrorofficial@gmail.com
           </p>
           <p className="flex gap-2 text-lg items-center">
             <span>
@@ -61,6 +61,6 @@ export default function Footer() {
       </div>
       <div className="w-full h-[2px] bg-black"></div>
       <p className="text-center">© 2024 English Mirror. All Rights Reserved</p>
-    </div>
+    </footer>
   );
 }

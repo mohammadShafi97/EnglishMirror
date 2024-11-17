@@ -6,7 +6,7 @@ export default function AboutUsSection() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: false });
   return (
-    <div
+    <section
       id="about"
       className="lg:px-[120px] px-5 py-10 relative bg-no-repeat bg-cover"
       style={{ backgroundImage: `url("/about-bg.jpg")` }}
@@ -57,6 +57,6 @@ export default function AboutUsSection() {
       <div className="relative flex">
         <ContactUsSection />
       </div>
-    </div>
+    </section>
   );
 }
