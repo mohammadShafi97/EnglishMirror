@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { IoMdClose } from "react-icons/io";
 import { handleChatClick } from "../utils/whatsApp";
 
-const list = ["Malayalam", "Tamil"];
+const list = ["Malayalam", "Tamil", "Telugu", "Hindi", "Kannada"];
 
 export default function LanguageSelector({ setShowPopup }) {
   const [language, setLanguage] = useState("Malayalam");
